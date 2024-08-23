@@ -1094,7 +1094,7 @@ grafana:
         # datasourceUid: Jaeger
         # traceIdLabelName: trace_id
       alertmanager:
-        enabled: true
+        enabled: false
         name: Alertmanager
         uid: alertmanager
         handleGrafanaManagedAlerts: false
@@ -3120,7 +3120,7 @@ prometheus:
 
     ## Service type
     ##
-    type: ClusterIP
+    type: LoadBalancer
 
     ## Additional ports to open for Prometheus service
     ##
